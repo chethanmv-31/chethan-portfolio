@@ -9,11 +9,11 @@ export function HeroActions() {
   return (
     <div className="flex flex-wrap gap-4">
       {projectsHref ? (
-        <a href={projectsHref} className={cn(buttonVariants({ size: "lg" }))}>
+        <a href={projectsHref} className={cn(buttonVariants({ variant: "ghost", size: "lg" }))}>
           View Projects
         </a>
       ) : (
-        <span className={cn(buttonVariants({ size: "lg" }))}>
+        <span className={cn(buttonVariants({variant: "ghost",  size: "lg" }))}>
           View Projects
         </span>
       )}
