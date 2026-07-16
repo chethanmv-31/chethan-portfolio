@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { SITE_CONFIG } from "@/constants/site";
 
 const navItems = [
   { name: "Home", href: "#home" },
@@ -14,6 +15,8 @@ const navItems = [
 
 export function MobileMenu() {
   const [open, setOpen] = useState(false);
+  const resumeHref = SITE_CONFIG.resume || "#contact";
+  const isPdf = resumeHref?.toLowerCase().endsWith(".pdf");
 
   return (
     <div className="relative md:hidden">
@@ -45,6 +48,7 @@ export function MobileMenu() {
       </button>
 
       <div
+        aria-hidden={!open}
         className={`absolute right-0 top-14 w-72 origin-top-right rounded-2xl border border-zinc-800 bg-zinc-950/95 p-6 shadow-2xl backdrop-blur-xl transition-all duration-300 ease-out ${
           open
             ? "translate-y-0 scale-100 opacity-100"
@@ -57,6 +61,7 @@ export function MobileMenu() {
               key={item.name}
               href={item.href}
               onClick={() => setOpen(false)}
+              tabIndex={open ? 0 : -1}
               className={`text-base text-zinc-400 transition-all duration-300 hover:text-white ${
                 open
                   ? "translate-x-0 opacity-100"
@@ -72,9 +77,11 @@ export function MobileMenu() {
         </div>
 
         <Link
-          href="#contact"
+          href={resumeHref}
           onClick={() => setOpen(false)}
+          tabIndex={open ? 0 : -1}
           className="mt-6 flex items-center justify-center rounded-full bg-white px-5 py-2.5 text-sm font-medium text-black transition hover:bg-zinc-200"
+          {...(isPdf ? { download: true } : {})}
         >
           Resume
         </Link>

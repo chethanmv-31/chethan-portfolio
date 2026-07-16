@@ -6,6 +6,9 @@ export default function Home() {
     <main className="min-h-screen bg-zinc-950 text-white">
       <Navbar />
       <Hero />
+
+      {/* Projects anchor: ensures "#projects" targets a real element */}
+      <section id="projects" className="min-h-[24rem] bg-transparent" />
     </main>
   );
 }
