@@ -10,9 +10,9 @@ export function Navbar() {
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50">
-      <nav className="mx-4 mt-4 flex items-center justify-between rounded-2xl border border-white/[0.08] bg-white/[0.03] px-5 py-3.5 shadow-xl shadow-black/20 backdrop-blur-2xl backdrop-saturate-150 sm:mx-6 lg:mx-auto lg:max-w-5xl lg:px-6">
+      <nav className="mx-4 mt-4 flex items-center justify-between rounded-2xl border border-white/[0.08] bg-white/[0.03] px-5 py-3.5 shadow-xl shadow-black/20 backdrop-blur-2xl backdrop-saturate-150 sm:mx-6 lg:mx-auto lg:max-w-7xl lg:px-8">
         <Link
-          href="/"
+          href="#home"
           className="text-lg font-semibold tracking-tight text-white"
         >
           Chethan<span className="text-zinc-400">.</span>
