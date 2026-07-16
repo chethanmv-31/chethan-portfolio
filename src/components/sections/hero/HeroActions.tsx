@@ -7,7 +7,7 @@ const resumeHref = SITE_CONFIG.resume;
 
 export function HeroActions() {
   return (
-    <div className="flex flex-wrap gap-4">
+    <div className="flex flex-wrap gap-4 items-center">
       <a
         href={projectsHref}
         className="rounded-full bg-white px-6 py-2.5 text-sm font-medium text-black transition duration-300 hover:bg-zinc-200"
