@@ -1,4 +1,9 @@
 export const DESIGN_SYSTEM = {
+  brand: {
+    name: "Chethan MV",
+    tagline: "Frontend Engineer",
+  },
+
   colors: {
     primary: "#3B82F6",
     secondary: "#8B5CF6",
@@ -16,33 +21,32 @@ export const DESIGN_SYSTEM = {
     danger: "#EF4444",
   },
 
-  typography: {
-    hero: "text-6xl font-bold tracking-tight",
-    heading: "text-4xl font-semibold",
-    subHeading: "text-2xl font-semibold",
-    body: "text-base leading-7",
-    caption: "text-sm",
-  },
-
-  spacing: {
-    sectionY: "py-24",
-    container: "max-w-7xl",
-    content: "px-6",
-  },
-
-  radius: {
-    button: "rounded-xl",
-    card: "rounded-2xl",
-    input: "rounded-xl",
+  layout: {
+    container: "1280px",
+    sectionSpacing: "120px",
+    maxContentWidth: "900px",
   },
 
   animation: {
-    duration: 0.4,
+    fast: 0.2,
+    normal: 0.4,
+    slow: 0.8,
+
     easing: "easeInOut",
   },
 
-  shadow: {
-    card: "shadow-lg",
-    button: "shadow-md",
+  transition: {
+    default: "all 0.3s ease",
+  },
+
+  zIndex: {
+    navbar: 50,
+    modal: 100,
+    tooltip: 200,
+  },
+
+  blur: {
+    navbar: "12px",
+    card: "20px",
   },
 } as const;
