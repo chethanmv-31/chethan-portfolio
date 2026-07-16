@@ -2,16 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { SITE_CONFIG } from "@/constants/site";
-
-const navItems = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Experience", href: "#experience" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
-  { name: "Contact", href: "#contact" },
-];
+import { NAV_LINKS, SITE_CONFIG } from "@/constants/site";
 
 export function MobileMenu() {
   const [open, setOpen] = useState(false);
@@ -56,9 +47,9 @@ export function MobileMenu() {
         }`}
       >
         <div className="flex flex-col gap-5">
-          {navItems.map((item, index) => (
+          {NAV_LINKS.map((item, index) => (
             <Link
-              key={item.name}
+              key={item.label}
               href={item.href}
               onClick={() => setOpen(false)}
               tabIndex={open ? 0 : -1}
@@ -71,7 +62,7 @@ export function MobileMenu() {
                 transitionDelay: open ? `${index * 50}ms` : "0ms",
               }}
             >
-              {item.name}
+              {item.label}
             </Link>
           ))}
         </div>

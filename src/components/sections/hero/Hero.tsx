@@ -5,7 +5,7 @@ import { HeroImage } from "./HeroImage";
 
 export function Hero() {
   return (
-    <Section className="relative isolate overflow-hidden pt-36 pb-24 lg:pt-40 lg:pb-32">
+    <Section id="home" className="relative isolate scroll-mt-28 overflow-hidden pt-36 pb-24 lg:pt-40 lg:pb-32">
       {/* Background Grid */}
       <div className="absolute inset-0 -z-20 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:48px_48px]" />
       {/* Background Glow */}
