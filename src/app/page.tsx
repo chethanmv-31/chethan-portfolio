@@ -1,12 +1,16 @@
 import { Container } from "@/components/common/Container";
 import Section from "@/components/common/Section";
+import SectionHeading from "@/components/common/SectionHeading";
 
 export default function Home() {
   return (
-    <Section id="test">
+    <Section>
       <Container>
-        <h2 className="text-3xl font-bold">Section Component</h2>
-        <p>This is our reusable section.</p>
+        <SectionHeading
+          badge="About"
+          title="Frontend Engineer"
+          subtitle="Building scalable web applications with React, Next.js and TypeScript."
+        />
       </Container>
     </Section>
   );
