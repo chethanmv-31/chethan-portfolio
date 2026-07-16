@@ -1,15 +1,14 @@
 import { cn } from "@/lib/utils";
-import { ReactNode } from "react";
+import { PropsWithChildren } from "react";
 
 interface GradientTextProps {
-  children: ReactNode;
   className?: string;
 }
 
-export default function GradientText({
+export function GradientText({
   children,
   className,
-}: GradientTextProps) {
+}: PropsWithChildren<GradientTextProps>) {
   return (
     <span
       className={cn(

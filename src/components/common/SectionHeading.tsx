@@ -7,18 +7,18 @@ interface SectionHeadingProps {
   className?: string;
 }
 
-export default function SectionHeading({
+export function SectionHeading({
   title,
   subtitle,
   badge,
   className,
 }: SectionHeadingProps) {
   return (
-    <div className={cn("mb-12 text-center", className)}>
+    <header className={cn("mb-12 text-center", className)}>
       {badge && (
-        <span className="mb-3 inline-flex rounded-full border px-3 py-1 text-sm font-medium text-primary">
+        <p className="mb-3 inline-flex items-center rounded-full border border-border bg-muted px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
           {badge}
-        </span>
+        </p>
       )}
 
       <h2 className="text-3xl font-bold tracking-tight md:text-5xl">
@@ -30,6 +30,6 @@ export default function SectionHeading({
           {subtitle}
         </p>
       )}
-    </div>
+    </header>
   );
 }

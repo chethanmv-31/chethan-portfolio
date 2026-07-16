@@ -1,7 +1,7 @@
 import { Container } from "@/components/common/Container";
-import GradientText from "@/components/common/GradientText";
-import Section from "@/components/common/Section";
-import SectionHeading from "@/components/common/SectionHeading";
+import { GradientText } from "@/components/common/GradientText";
+import { Section } from "@/components/common/Section";
+import { SectionHeading } from "@/components/common/SectionHeading";
 
 export default function Home() {
   return (
