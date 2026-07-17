@@ -1,45 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import { NAV_LINKS } from "@/constants/site";
 import { cn } from "@/lib/utils";
-
-const sectionIds = NAV_LINKS.map((item) => item.href.slice(1));
+import { useActiveSection } from "@/hooks/useActiveSection";
 
 export function NavLinks() {
-  const [activeSection, setActiveSection] = useState("home");
-
-  useEffect(() => {
-    const visibleSections = new Set<string>();
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            visibleSections.add(entry.target.id);
-          } else {
-            visibleSections.delete(entry.target.id);
-          }
-        });
-
-        const active = sectionIds.find((id) => visibleSections.has(id));
-        if (active) {
-          setActiveSection(active);
-        }
-      },
-      { rootMargin: "-20% 0px -65% 0px", threshold: 0 }
-    );
-
-    sectionIds.forEach((id) => {
-      const element = document.getElementById(id);
-      if (element) {
-        observer.observe(element);
-      }
-    });
-
-    return () => observer.disconnect();
-  }, []);
+  const activeSection = useActiveSection();
 
   return (
     <div className="hidden items-center gap-8 md:flex">
