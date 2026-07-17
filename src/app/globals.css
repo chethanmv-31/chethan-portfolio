@@ -10,7 +10,13 @@
   --color-border: var(--border);
   --color-muted: var(--muted);
   --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
   --color-muted-foreground: var(--muted-foreground);
+  --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
+  --color-input: var(--input);
 }
 
 :root {
@@ -19,7 +25,13 @@
   --border: rgba(148, 163, 184, 0.12);
   --muted: rgba(255, 255, 255, 0.04);
   --primary: #38bdf8;
+  --primary-foreground: #09090b;
+  --secondary: rgba(255, 255, 255, 0.08);
+  --secondary-foreground: #ffffff;
   --muted-foreground: #94a3b8;
+  --ring: #38bdf8;
+  --destructive: #ef4444;
+  --input: rgba(148, 163, 184, 0.18);
 }
 
 .dark {
@@ -28,7 +40,13 @@
   --border: rgba(148, 163, 184, 0.12);
   --muted: rgba(255, 255, 255, 0.04);
   --primary: #38bdf8;
+  --primary-foreground: #09090b;
+  --secondary: rgba(255, 255, 255, 0.08);
+  --secondary-foreground: #ffffff;
   --muted-foreground: #94a3b8;
+  --ring: #38bdf8;
+  --destructive: #ef4444;
+  --input: rgba(148, 163, 184, 0.18);
 }
 
 html {

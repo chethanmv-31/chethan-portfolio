@@ -6,8 +6,8 @@ import { NAV_LINKS, SITE_CONFIG } from "@/constants/site";
 
 export function MobileMenu() {
   const [open, setOpen] = useState(false);
-  const resumeHref = SITE_CONFIG.resume || "#contact";
-  const isPdf = resumeHref?.toLowerCase().endsWith(".pdf");
+  const resumeHref = SITE_CONFIG.resume?.trim() || "#contact";
+  const isPdf = resumeHref.toLowerCase().endsWith(".pdf");
 
   return (
     <div className="relative md:hidden">
