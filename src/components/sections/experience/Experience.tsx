@@ -90,7 +90,7 @@ export function Experience() {
                                             <Icon className="h-5 w-5 transition-transform duration-500 group-hover:scale-110" />
                                             {/* Pulse effect for Current role */}
                                             {item.isCurrent && (
-                                                <div className="absolute -inset-1 -z-10 rounded-full bg-blue-500/10 animate-ping opacity-75" />
+                                                <div className="absolute -inset-1 -z-10 rounded-full bg-blue-500/10 animate-ping opacity-75 motion-reduce:hidden" />
                                             )}
                                         </div>
                                     </div>

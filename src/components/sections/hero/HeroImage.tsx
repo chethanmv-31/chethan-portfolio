@@ -24,7 +24,7 @@ export function HeroImage() {
   const initials = getInitials(SITE_CONFIG.name);
 
   return (
-    <div className="relative flex justify-center animate-float">
+    <div className="relative flex justify-center animate-float motion-reduce:animate-none">
       <div className="absolute h-80 w-80 rounded-full bg-gradient-to-br from-blue-500/20 via-cyan-500/20 to-violet-500/20 blur-3xl" />
 
       <div className="relative flex w-full max-w-[340px] flex-col items-center rounded-3xl border border-white/10 bg-white/[0.06] p-8 shadow-2xl shadow-black/30 backdrop-blur-2xl backdrop-saturate-150">

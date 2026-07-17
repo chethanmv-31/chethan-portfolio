@@ -151,7 +151,7 @@ export function ExperienceCard({ item, index }: ExperienceCardProps) {
 
         {/* Work Done Achievements Bullets */}
         <ul className={cn("space-y-3 text-sm leading-relaxed text-zinc-400")}>
-          {item.points.slice(0, 4).map((point, index) => (
+          {item.points.map((point, index) => (
             <li
               key={index}
               className={cn(

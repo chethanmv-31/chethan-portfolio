@@ -5,8 +5,8 @@ import { MobileMenu } from "./MobileMenu";
 import { NavLinks } from "./NavLinks";
 
 export function Navbar() {
-  const resumeHref = SITE_CONFIG.resume || "#contact";
-  const isPdf = resumeHref?.toLowerCase().endsWith(".pdf");
+  const resumeHref = SITE_CONFIG.resume?.trim() || "#contact";
+  const isPdf = resumeHref.toLowerCase().endsWith(".pdf");
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50">
