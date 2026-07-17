@@ -2,6 +2,7 @@ import { Navbar } from "@/components/sections/navbar/Navbar";
 import { Hero } from "@/components/sections/hero/Hero";
 import { About } from "@/components/sections/about/About";
 import { Experience } from "@/components/sections/experience/Experience";
+import { Skills } from "@/components/sections/skills/Skills";
 import { Section } from "@/components/common/Section";
 
 export default function Home() {
@@ -11,15 +12,7 @@ export default function Home() {
       <Hero />
       <About />
       <Experience />
-
-      <Section id="skills" className="scroll-mt-28">
-        <div className="mx-auto max-w-5xl px-6">
-          <h2 className="text-2xl font-semibold tracking-tight text-white">Skills</h2>
-          <p className="mt-3 max-w-2xl text-zinc-400">
-            React, Next.js, TypeScript, UI engineering, performance tuning, and accessible front-end systems.
-          </p>
-        </div>
-      </Section>
+      <Skills />
 
       <Section id="projects" className="scroll-mt-28">
         <div className="mx-auto max-w-5xl px-6">
