@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/sections/navbar/Navbar";
 import { Hero } from "@/components/sections/hero/Hero";
 import { About } from "@/components/sections/about/About";
+import { Contact } from "@/components/sections/contact/Contact";
 import { Experience } from "@/components/sections/experience/Experience";
 import { Skills } from "@/components/sections/skills/Skills";
 import { Section } from "@/components/common/Section";
@@ -23,14 +24,7 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section id="contact" className="scroll-mt-28">
-        <div className="mx-auto max-w-5xl px-6">
-          <h2 className="text-2xl font-semibold tracking-tight text-white">Contact</h2>
-          <p className="mt-3 max-w-2xl text-zinc-400">
-            Reach out for collaboration, freelance work, or a conversation about front-end engineering.
-          </p>
-        </div>
-      </Section>
+      <Contact />
     </main>
   );
 }
