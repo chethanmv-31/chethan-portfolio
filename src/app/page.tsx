@@ -1,9 +1,9 @@
 import { Navbar } from "@/components/sections/navbar/Navbar";
 import { Hero } from "@/components/sections/hero/Hero";
 import { About } from "@/components/sections/about/About";
+import { Experience } from "@/components/sections/experience/Experience";
 
 const sectionAnchors = [
-  "experience",
   "skills",
   "projects",
   "contact",
@@ -15,6 +15,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
+      <Experience />
 
       {sectionAnchors.map((id) => (
         <section
