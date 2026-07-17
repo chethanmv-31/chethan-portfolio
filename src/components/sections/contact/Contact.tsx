@@ -43,6 +43,18 @@ export function Contact() {
 
       <Container>
         <div className="mx-auto max-w-6xl">
+          <div className="mb-10 text-center">
+            <p className="mb-3 inline-flex items-center rounded-full border border-cyan-400/20 bg-cyan-500/10 px-3 py-1 text-sm font-medium uppercase tracking-[0.2em] text-cyan-300">
+              Contact
+            </p>
+            <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl">
+              Let&apos;s connect
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-zinc-400">
+              Reach out for freelance work, collaborations, or a conversation about building polished web experiences.
+            </p>
+          </div>
+
           <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-zinc-900/70 p-8 shadow-2xl shadow-cyan-500/10 backdrop-blur-xl md:p-12">
             <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
               <div className="space-y-6">
